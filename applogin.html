@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://use.fontawesome.com/69ca5d3ded.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <style>
         * {
             margin: 0;
@@ -42,88 +41,57 @@
             text-transform: uppercase;
             padding: 0 20px;
         }
-        nav .logo {
-            width: 25%;
-            text-align: center;
-        }
         nav .logo h1 {
-            font-size: 1.5rem; 
-            font-weight: 600; 
-        }
-        nav .menu {
-            width: 40%;
-            display: flex;
-            justify-content: space-around;
+            font-size: 1.5rem;
+            font-weight: 600;
         }
         nav .menu a {
             text-decoration: none;
             color: white;
             font-weight: bold;
+            margin: 0 10px;
             transition: color 0.3s ease;
         }
         nav .menu a:hover {
-            color: #00b894; 
+            color: #00b894;
         }
         main {
             width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px; 
-        }
-        section.left {
-            width: 50%; 
-            padding: 40px; 
-        }
-        section.right {
-            width: 50%; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px; 
+            padding: 40px;
         }
         section {
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
             text-align: left;
-            margin: 20px;
         }
         section h3 {
-            font-size: 2rem; 
-            font-weight: 300; 
-            letter-spacing: 2px; 
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
-            margin-bottom: 10px; 
-        }
-        section h1 {
-            margin: 20px 0; 
-            font-size: 3rem; 
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
-            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 10px;
         }
         section p {
-            font-size: 1.5rem; 
-            word-spacing: 2px;
+            font-size: 1.1rem;
             margin-bottom: 25px;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
         }
-        section a {
-            padding: 12px 30px;
-            border-radius: 4px;
-            outline: none;
-            text-transform: uppercase;
-            font-size: 1rem; 
-            font-weight: 500;
+        section a, button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0056b8;
+            color: #fff;
+            cursor: pointer;
             text-decoration: none;
-            letter-spacing: 1px;
-            background-color: #0056b8; 
-            color: #fff; 
-            transition: background-color 0.3s ease, color 0.3s ease;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
         }
-        section a:hover {
-            background-color: #079992; 
+        section a:hover, button:hover {
+            background-color: #079992;
         }
         footer{
             width: 100%;
@@ -131,10 +99,9 @@
             background: rgba(0, 0, 0, 0.2);
             color: white;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             text-transform: uppercase;
-            padding: 0 20px;
         }
     </style>
 </head>
@@ -145,28 +112,50 @@
                 <h1>Hope Haven Charity</h1>
             </div>
             <div class="menu">
-                <a href="#" target="_blank">Home</a>
+                <a href="#">Home</a>
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
             </div>
         </nav>
         <main>
-            <section class="left">
+            <section>
                 <h3>About Us</h3>
-                <p>Welcome to Hope Haven Charity, where every act of kindness creates ripples of hope and change in the world. Established with a heartfelt mission to uplift lives and communities, Hope Haven Charity is dedicated to making a meaningful impact through compassion, action, and sustainability.</p>
+                <p>Welcome to Hope Haven Charity, where every act of kindness creates ripples of hope and change in the world.</p>
                 <h3>Our Mission</h3>
-                <p>At Hope Haven Charity, our mission is simple yet profound: to extend a helping hand to those in need, fostering hope and dignity. We believe in the transformative power of generosity and collaboration to address pressing social issues and bring about lasting change.</p>
-            </section><br>
-            <section class="right">
+                <p>To extend a helping hand to those in need, fostering hope and dignity through generosity and collaboration.</p>
+            </section>
+            <section>
                 <h3>Empower Change, Donate Today!</h3>
-                <h1><span class="change_content"></span></h1>
                 <p>Your donation saves lives, empowers dreams, and transforms futures.</p>
-                <a href="https://rzp.io/l/ooqHjM7" class="btntwo">Donate Now</a>
+                <button id="rzp-button">Donate Now</button>
             </section>
         </main>
     </header>
     <footer>
-       2024  &copy; all rights reserved. Hope haven charity
+       2024 &copy; All rights reserved. Hope Haven Charity
     </footer>
+
+    <script>
+        // Razorpay Payment Gateway Integration
+        document.getElementById('rzp-button').onclick = function (e) {
+            var options = {
+                "key": "<YOUR_KEY_ID>", // Replace with your Razorpay API Key
+                "amount": "10000", // Amount in paisa (e.g., 10000 = 100 INR)
+                "currency": "INR",
+                "name": "Hope Haven Charity",
+                "description": "Donation Payment",
+                "image": "favicon.jpg",
+                "handler": function (response) {
+                    alert("Payment Successful! Payment ID: " + response.razorpay_payment_id);
+                },
+                "theme": {
+                    "color": "#0056b8"
+                }
+            };
+            var rzp = new Razorpay(options);
+            rzp.open();
+            e.preventDefault();
+        };
+    </script>
 </body>
 </html>
