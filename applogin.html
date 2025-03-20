@@ -3,159 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate for Need</title>
-    <link rel="icon" href="favicon.jpg" type="image/jpg" sizes="16x16">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script src="https://use.fontawesome.com/69ca5d3ded.js"></script>
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        header {
-            width: 100%;
-            height: 100vh;
-            background-image: url('word.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #333; 
-        }
-        nav {
-            width: 100%;
-            height: 15vh;
-            background: rgba(0, 0, 0, 0.2);
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-transform: uppercase;
-            padding: 0 20px;
-        }
-        nav .logo h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-        nav .menu a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-        nav .menu a:hover {
-            color: #00b894;
-        }
-        main {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 40px;
-        }
-        section {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            padding: 20px;
-            text-align: left;
-        }
-        section h3 {
-            font-size: 2rem;
-            font-weight: 300;
-            margin-bottom: 10px;
-        }
-        section p {
-            font-size: 1.1rem;
-            margin-bottom: 25px;
-        }
-        section a, button {
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #0056b8;
-            color: #fff;
-            cursor: pointer;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-        }
-        section a:hover, button:hover {
-            background-color: #079992;
-        }
-        footer{
-            width: 100%;
-            height: 15vh;
-            background: rgba(0, 0, 0, 0.2);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-transform: uppercase;
-        }
-    </style>
+    <title>Hope Haven Charity</title>
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <h1>Hope Haven Charity</h1>
-            </div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-            </div>
+            <div class="logo">Hope Haven Charity</div>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <main>
-            <section>
-                <h3>About Us</h3>
-                <p>Welcome to Hope Haven Charity, where every act of kindness creates ripples of hope and change in the world.</p>
-                <h3>Our Mission</h3>
-                <p>To extend a helping hand to those in need, fostering hope and dignity through generosity and collaboration.</p>
-            </section>
-            <section>
-                <h3>Empower Change, Donate Today!</h3>
-                <p>Your donation saves lives, empowers dreams, and transforms futures.</p>
-                <button id="rzp-button">Donate Now</button>
-            </section>
-        </main>
+        <div class="hero">
+            <h1>Make a Difference Today</h1>
+            <p>Your donation brings hope and changes lives.</p>
+            <a href="#donate" class="btn">Donate Now</a>
+        </div>
     </header>
+    
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are a non-profit dedicated to providing support and resources to those in need.</p>
+    </section>
+    
+    <section id="impact" class="section">
+        <h2>Our Impact</h2>
+        <div class="impact-cards">
+            <div class="card">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <h3>10,000+ Lives Touched</h3>
+                <p>Providing essentials to families in need.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-school"></i>
+                <h3>Education for Children</h3>
+                <p>Empowering future generations through learning.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-hands-helping"></i>
+                <h3>Community Support</h3>
+                <p>Creating sustainable programs for a better future.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="donate" class="section">
+        <h2>Empower Change, Donate Today!</h2>
+        <p>Your contribution makes a difference.</p>
+        <button id="rzp-button" class="btn">Donate Now</button>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@hopehaven.org</p>
+        <p>Phone: +91 123 456 7890</p>
+    </section>
+    
     <footer>
-       2024 &copy; All rights reserved. Hope Haven Charity
+        <p>2024 &copy; Hope Haven Charity | All rights reserved</p>
     </footer>
-
-    <script>
-        // Razorpay Payment Gateway Integration
-        document.getElementById('rzp-button').onclick = function (e) {
-            var options = {
-                "key": "<YOUR_KEY_ID>", // Replace with your Razorpay API Key
-                "amount": "10000", // Amount in paisa (e.g., 10000 = 100 INR)
-                "currency": "INR",
-                "name": "Hope Haven Charity",
-                "description": "Donation Payment",
-                "image": "favicon.jpg",
-                "handler": function (response) {
-                    alert("Payment Successful! Payment ID: " + response.razorpay_payment_id);
-                },
-                "theme": {
-                    "color": "#0056b8"
-                }
-            };
-            var rzp = new Razorpay(options);
-            rzp.open();
-            e.preventDefault();
-        };
-    </script>
+    
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
