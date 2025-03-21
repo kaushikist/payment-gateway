@@ -29,6 +29,3 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ### Acknowledgements
 - [Razorpay Documentation](https://razorpay.com/docs/)
 - Any other resources or individuals you want to acknowledge
-
-### Contact
-For any questions or feedback, feel free to contact me at kaushikist23@gmail.com
