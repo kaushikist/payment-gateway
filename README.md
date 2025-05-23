@@ -1,31 +1,46 @@
+# 🌟 Hope Haven Charity Website
+
+A modern and responsive website for a fictional non-profit organisation — **Hope Haven Charity**, built to showcase impact, drive donations, and encourage community support.
 
 
-## Payment Gateway Integration using Razorpay
+## 🚀 Features
 
-This repository demonstrates how to integrate Razorpay as a payment gateway in a web application. Razorpay is a popular payment gateway solution in India that supports online payments via credit/debit cards, net banking, UPI, and wallets.
+- Hero section with CTA
+- About, Impact, Donate, and Contact sections
+- Razorpay integration for donations
+- Responsive design using Flexbox
+- Clean and accessible code
 
-### Technologies Used
-- HTML
-- CSS
-- JavaScript
-- Razorpay API
+## 🛠️ Tech Stack
 
-### Installation
+- HTML5
+- CSS3 (Flexbox, Responsive Design)
+- JavaScript (Razorpay Integration)
+- Font Awesome Icons
+- Google Fonts
+
+## 💻 Preview
+
+> Hosted on GitHub Pages: [https://kaushikist.github.io/hope-haven-charity](https://kaushikist.github.io/hope-haven-charity)
+
+## 🧰 How to Use
+
 1. Clone the repository:
-2. Navigate to the project directory:
-3. ### Usage
-1. Register on [Razorpay](https://razorpay.com/) to get your API keys.
-2. Replace `<YOUR_KEY_ID>` and `<YOUR_KEY_SECRET>` in `index.html` with your actual Razorpay API key and secret.
-3. Open `index.html` in a web browser to see the payment gateway in action.
-4. Choose a payment method (card, net banking, UPI, etc.) and complete the transaction using Razorpay's test credentials.
-### Directory Structure
+2. Replace `YOUR_RAZORPAY_KEY` in `script.js` with your actual Razorpay key.
+3. Open `index.html` in your browser.
 
-### Contributing
-Feel free to fork the repository, submit pull requests, or open issues for any bugs or feature requests.
+## Screenshots
 
-### License
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
-### Acknowledgements
-- [Razorpay Documentation](https://razorpay.com/docs/)
-- Any other resources or individuals you want to acknowledge
+
+## 🤝 Contributing
+
+Feel free to submit pull requests if you’d like to contribute or suggest features!
+
+## Contact
+
+
+
+
+
+
