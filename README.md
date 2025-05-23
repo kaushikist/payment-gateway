@@ -1,9 +1,9 @@
-# 🌟 Hope Haven Charity Website
+#  Hope Haven Charity Website
 
 A modern and responsive website for a fictional non-profit organisation — **Hope Haven Charity**, built to showcase impact, drive donations, and encourage community support.
 
 
-## 🚀 Features
+##  Features
 
 - Hero section with CTA
 - About, Impact, Donate, and Contact sections
@@ -11,7 +11,7 @@ A modern and responsive website for a fictional non-profit organisation — **Ho
 - Responsive design using Flexbox
 - Clean and accessible code
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3 (Flexbox, Responsive Design)
@@ -19,11 +19,11 @@ A modern and responsive website for a fictional non-profit organisation — **Ho
 - Font Awesome Icons
 - Google Fonts
 
-## 💻 Preview
+## Preview
 
 > Hosted on GitHub Pages: [https://kaushikist.github.io/hope-haven-charity](https://kaushikist.github.io/hope-haven-charity)
 
-## 🧰 How to Use
+##  How to Use
 
 1. Clone the repository:
 2. Replace `YOUR_RAZORPAY_KEY` in `script.js` with your actual Razorpay key.
