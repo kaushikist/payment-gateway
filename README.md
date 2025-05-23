@@ -30,6 +30,13 @@ A modern and responsive website for a fictional non-profit organisation — **Ho
 3. Open `index.html` in your browser.
 
 ## Screenshots
+![image](https://github.com/user-attachments/assets/b7121e2d-0382-455d-b0de-decbc94f3648)
+![image](https://github.com/user-attachments/assets/e7d6c426-b71a-4e68-8978-c114dbfa58bc)
+![image](https://github.com/user-attachments/assets/9fcc3259-e534-404c-84cb-4d7b58c00576)
+![image](https://github.com/user-attachments/assets/1a2cc366-7eab-43d2-b853-a08a2d49378d)
+
+
+
 
 
 
