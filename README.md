@@ -31,6 +31,7 @@ A modern and responsive website for a fictional non-profit organisation — **Ho
 
 ## Screenshots
 
+![image](https://github.com/user-attachments/assets/477daccd-6417-4068-8495-7789830ecd4c)
 
 
 ## 🤝 Contributing
